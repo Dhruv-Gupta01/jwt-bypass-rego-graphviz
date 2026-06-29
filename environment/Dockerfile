@@ -1,4 +1,11 @@
-FROM ghcr.io/laude-institute/t-bench/python-3-13:20250620
+FROM public.ecr.aws/docker/library/python:3.13-slim-bookworm@sha256:01f42367a0a94ad4bc17111776fd66e3500c1d87c15bbd6055b7371d39c124fb
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        asciinema \
+        curl \
+        tmux \
+    && rm -rf /var/lib/apt/lists/*
 
 ARG OPA_VERSION=0.68.0
 ARG OPA_SHA256=dfd5081fc6f930dfeaf2a225e31e616fc227dc0c7b43019b73d6f8fb8a1de1aa
