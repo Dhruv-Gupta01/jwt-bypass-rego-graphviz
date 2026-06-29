@@ -1,0 +1,14 @@
+[
+  {"route": "/health", "method": "GET", "middleware_enforced": false},
+  {"route": "/api/data", "method": "GET", "middleware_enforced": true},
+  {"route": "/api/export", "method": "POST", "middleware_enforced": true},
+  {"route": "/api/profile", "method": "GET", "middleware_enforced": false},
+  {"route": "/api/report", "method": "GET", "middleware_enforced": false},
+  {"route": "/api/users", "method": "GET", "middleware_enforced": true},
+  {"route": "/admin/audit", "method": "GET", "middleware_enforced": true},
+  {"route": "/admin/dashboard", "method": "GET", "middleware_enforced": true},
+  {"route": "/admin/reports", "method": "GET", "middleware_enforced": false},
+  {"route": "/admin/settings", "method": "GET", "middleware_enforced": false},
+  {"route": "/internal/metrics", "method": "GET", "middleware_enforced": false},
+  {"route": "/internal/status", "method": "GET", "middleware_enforced": true}
+]

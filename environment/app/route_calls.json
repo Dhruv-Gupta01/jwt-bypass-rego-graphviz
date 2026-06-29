@@ -1,0 +1,7 @@
+{
+  "/admin/settings": ["/admin/dashboard"],
+  "/api/data": ["/admin/reports"],
+  "/api/export": ["/internal/metrics"],
+  "/api/profile": ["/api/data"],
+  "/api/report": ["/admin/reports"]
+}
